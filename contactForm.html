@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Hostel Homepage</title>
+    <link type="text/css" href="styleSheet.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="scripts/navbar.js"></script>
+  </head>
+  
+<div id="navbar" class="nav">
+    <a href="index.html"><p>Home</p></a>
+     <a href="facilities.html"><p>Facilities</p></a>
+     <a href="prices.html"><p>Prices</p></a>
+     <a href="cafe.html"><p>Our cafe</p></a>
+     <a href="gettingHere.html"><p>Getting here</p></a>
+     <a href="contactForm.html" class="active"><p>Contact us</p></a>
+     <a href="javascript:void(0);" class="icon" onclick="navBurger()">
+       <i class="fa fa-bars"></i>
+     </a>
+    </div>
+
+<header>
+  <div class="header-text">
+    <h1>Backpacker's Hostel</h1>
+    <p id="sub-text">Visit Today</p>
+  </div>
+</header>
+<section class="contentArea">
+  <p> Enter your name and contact details and we'll get in touch with you as soon as possible. </p>
+  <form id="contactForm" action="data/processData.php" method="post">
+    <label for="first" class="textLabel">Enter your first name:</label>
+    <input type="text" name="first" id="first" required/>
+    <input type="submit" name="submit" id="submit" value="Submit" />
+  </form>
+</section>
+</body>
+</html>
