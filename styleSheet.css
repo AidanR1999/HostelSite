@@ -1,34 +1,48 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
-.nav{
-	background-color: #2E95DA;
-	overflow: hidden;
-	top: 0px;
-	left: 0px;
-	width: 100%;
-	position: relative;
-	padding-left: 0px;
+html, body {
+    margin:0;
+    padding:0;
+    height: 100%;
+    width: 100%;
 }
 
-.nav a{
-	float: left;
-	display: block;
-	color: black;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	font-size: 17px;
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 10%;
+    width: 100%;
 }
 
-.nav a:hover {
-	background-color: #ddd;
-	color:white;
+.nav li {
+    display: inline;
 }
 
+.nav-text {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 1.5px;
+}
 
-.nav .icon {
-	display:none;
+.nav a:hover, a:hover span {
+    color: black;
+}
+
+.nav li *{
+    float: right;
+}
+
+.nav .home {
+    float: left;
+}
+
+.nav li a{
+    text-decoration: none;
+    padding: 1% 0.5% 0 2.5%;
 }
 
 @media screen and (max-width: 600px) {
@@ -56,39 +70,20 @@
 	}
 }
 
-#content {
-	float:left;
-	width:75%;
-	margin-left: 12.5%;
-	background:coral;
-}
-
 header { 
-	height: 400px;
-	background: #000000 url(images/stock/mountainview.jpg) no-repeat center top; 
+	height: 85%;
+	background: url(images/stock/mountainview.jpg) no-repeat; 
 	background-size: cover;
 	background-position: center;
 	position: relative;
-	width: 80%;
-	margin-left: 10%;
+    width: 100%;
 }
 
-h1 {
-	font-weight: bold;
-	font-size: 36;
-	color: #fff;
-	font-family: 'Lora', serif;
-}
-
-#sub-text {
-	color: #fff;
-	font-family: 'Lora', serif;
-}
-
-div.header-text {
-	position: absolute;
-	width: 40%;
-	top: 5%;
-	right: 5%;
-	float: right;
-}
+.heading-text{
+    font-size: 4em;
+    letter-spacing: 1px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }

@@ -1,8 +1,8 @@
 function navBurger() {
-    var element = document.getElementById("navbar");
-    if (element.className === "nav") {
-        element.className += " responsive";
+    var e = document.getElementById("navbar")
+    if (e.className === "nav") {
+        e.className += " responsive";
     } else {
-        element.className = "nav";
+        e.className = "nav";
     }
 }
