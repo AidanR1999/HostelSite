@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Hostel Homepage</title>
+    <title>Youth Hostel</title>
     <link type="text/css" href="stylesheet.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="scripts/navbar.js"></script>
@@ -51,17 +51,190 @@
     </div>
 
     <div class="heading-text">Our Youth Hostel</div>
-    <button class="btn header-btn gold" type="button">About us</button>
+    <button class="btn header-btn btn-gold" type="button">About us</button>
 
   </header>
     
-<div class="section blue">
-  <h1>About us!</h1>
-  <p> The Hostel has one of the best locations in Scotland. From the attractive loch-side garden, the views across to mountain range are breathtaking. Good facilities mean the hostel is popular with walkers and tourist alike.</p>
-  <p>There are otters, badgers and pine martins in the area. Red deer are numerous, and on the mountains ravens, ptarmigan, golden eagles and mountain hares can be seen on occasion</p>
-  <p>... well situated for walking and exploring some of Scotland's most celebrated scenery"!</p>
-  <p>With no mobile phone reception the emphasis here is on tranquillity and relaxation! </p>
+<section class="bg-white" id="about">
+  <div class="section">
+    <h1>About us!</h1>
+    <hr>
+    <p> The Hostel has one of the best locations in Scotland. From the attractive loch-side garden, the views across to mountain range are breathtaking. Good facilities mean the hostel is popular with walkers and tourist alike.</p>
+    <p>There are otters, badgers and pine martins in the area. Red deer are numerous, and on the mountains ravens, ptarmigan, golden eagles and mountain hares can be seen on occasion</p>
+    <p>... well situated for walking and exploring some of Scotland's most celebrated scenery"!</p>
+    <p>With no mobile phone reception the emphasis here is on tranquillity and relaxation! </p>
+  </div>
+</section>
+
+
+<div class="section bg-gold contact" id="contact">
+  <h1>Contact us!</h1>
+  <p> Enter your name and contact details and we'll get in touch with you as soon as possible. </p>
+  <form id="contactForm" action="data/processData.php" method="post" style="padding-bottom: 3%;">
+    <label for="first" class="label">Enter your first name:</label>
+    <input class="textbox" type="text" name="first" id="first" placeholder="First Name" required/>
+    <input type="submit" name="submit" id="submit" value="Submit" class="btn" />
+  </form>
 </div>
+
+<section class="bg-white" id="facilities">
+  <div class="section">
+      <h1>Facilities Available</h1>
+      <hr>
+      <div class="img-row">
+        <div class="img-column">
+          <img src="images/stock/cafe-img.jpg">
+          <p>Café</p>
+        </div>
+        <div class="img-column">
+          <img src="images/stock/shop-img.jpg">
+          <p>On site shop</p>
+        </div>
+        <div class="img-column">
+          <img src="images/stock/car-park.jpg">
+          <p>Car Parking </p>
+        </div>
+      </div>
+
+      <div class="img-row">
+        <div class="img-column">
+          <img src="images/stock/self-catering.jpg">
+          <p>Self-catering Facilities</p>
+        </div>
+        <div class="img-column">
+          <img src="images/stock/lounge-area.jpg">
+          <p>Lounge area</p>
+        </div>
+        <div class="img-column">
+          <img src="images/stock/computer-area.jpg">
+          <p>Internet Connectivity</p>
+        </div>
+      </div>
+      <div class="img-row">
+          <div class="img-column">
+            <img src="images/stock/washing-machines.jpg">
+            <p>Washing machines</p>
+          </div>
+        </div>
+  </div>
+</section>
+
+<section class="bg-blue" id="accomodation-info">
+  <div class="section">
+      <h1> Accommodation Information</h1>
+      <hr>
+      <h2>What's Included?</h2>
+      <p>Accommodation in <b>shared dormitories</b>: bunk,  pillow, flat sheet and pillow case are provided. You will need to bring your  own sleeping bag. Access to shared toilets and washing facilities. Access to  self catering facilities. Basic cutlery, crockery and cooking utensils are  provided. £9.50 per bed per night.</p>
+      <p>Accommodation in <b>group rooms</b> : bed with duvet  and bed linen. Access to shared toilets, washing facilities. Access to self  catering facilities. Basic cutlery, crockery and cooking utensils are provided. £11 per bed per night (min. group size 4, maximum 6.)</p>
+      <p >Accommodation in <b>double rooms</b>: double bed  with duvet and bed linen. Access to shared toilets, washing facilities. Access  to self catering facilities. Basic cutlery, crockery and cooking utensils are  provided. £25 per room.</p>
+      <p>Purchasable Extras : Towel  £4</p>
+      <p style="padding-bottom: 3%;" class="footnote"> (Guests can cancel their reservation free of charge up to 2 days before arrival. Deposits paid are non refundable.)</p>
+  </div>
+</section>
+
+<section class="bg-white" id="cafe-menu">
+  <div class="section">
+    <h1>Café Menu</h1>
+    <hr>
+    <h1 class="menu-heading">Specials</h1>
+    <div class="menu-row">
+      <div class="menu-column">
+        <p class="menu-item">Lentil curry and rice</p>
+        <p>Fresh locally sourced lentils</p>
+      </div>
+      <div class="menu-column">
+        <p class="menu-item">Lasagne and salad</p>
+        <p>Homemade fresh lasagne</p>
+      </div>
+    </div>
+    <p style="text-align: center;" class="menu-item">Wholemeal pizza and salad </p>
+    <p style="text-align: center; padding-bottom: 3%;">Cooked to perfection using our state of the art pizza oven</p>
+    <hr>
+    <h1 class="menu-heading">Food</h1>
+    <div class="menu-row">
+      <div class="menu-column">
+        <p class="menu-item">Home made soups and bread</p>
+        <p>Lentil, minestrone, chicken noodle</p>
+      </div>
+      <div class="menu-column">
+        <p class="menu-item">All-day Breakfast</p>
+        <p>Lorne sausage, black pudding, beans, toast and potato scone</p>
+      </div>
+    </div>
+    <div class="menu-row">
+      <div class="menu-column">
+        <p class="menu-item">Baked potatoes with fillings</p>
+        <p>Beans, tuna, cheese, coleslaw</p>
+      </div>
+      <div class="menu-column">
+        <p class="menu-item">Wholemeal bread sandwiches</p>
+        <p>Lorne sausage, black pudding, beans, toast and potato scone</p>
+      </div>
+    </div>
+    <hr>
+    <h1 class="menu-heading">Extras</h1>
+    <div class="menu-row">
+      <div class="menu-column">
+        <p class="menu-item">Home baked cakes, Tea breads and flapjacks</p>
+        <p>Baked in-house using locally sourced ingrediants</p>
+      </div>
+      <div class="menu-column">
+        <p class="menu-item">Fruit puddings</p>
+        <p>Lorne sausage, black pudding, beans, toast and potato scone</p>
+      </div>
+    </div>
+    <p style="text-align: center;" class="menu-item">Ice cream</p>
+    <p style="text-align: center; padding-bottom: 3%;">Vanilla, strawberry, chocolate, mint</p>
+    <hr>
+    <h1 class="menu-heading">Drinks</h1>
+    <div class="menu-row">
+      <div class="menu-column">
+        <p class="menu-item">Tea</p>
+        <p>English, earl grey, green</p>
+      </div>
+      <div class="menu-column">
+        <p class="menu-item">Machu Pichu coffee</p>
+        <p>Imported from Peru</p>
+      </div>
+    </div>
+    <div class="menu-row">
+      <div class="menu-column">
+        <p class="menu-item">Hot chocolate</p>
+        <p>Homemade hot chocolate</p>
+      </div>
+      <div class="menu-column">
+        <p class="menu-item">Elderflower cordial</p>
+        <p>Soft drink from central Europe</p>
+      </div>
+    </div>
+    <p style="text-align: center;" class="menu-item">Bottled water</p>
+    <p style="text-align: center; padding-bottom: 3%;">Perthshire still water</p>
+  </div>
+</section>
+
+<section class="bg-blue" id="getting-here">
+  <div class="section">
+    <h1>Where to find us?</h1>
+    <hr>
+    <iframe class="map" width='100%' height='100%' id='mapcanvas' src='https://maps.google.com/maps?q=Glasgow,%20United%20Kingdom&amp;t=&amp;z=10&amp;ie=UTF8&amp;iwloc=&amp;output=embed' frameborder='0' scrolling='no' marginheight='0' marginwidth='0'>
+      <div class="zxos8_gm">
+        <a href="https://onecompare.com/samsung/galaxy-s9-plus-deals">here</a>
+      </div>
+      <div style='overflow:hidden;'><div id='gmap_canvas' style='height:100%;width:100%;'>
+      </div>
+    </div>
+    <div>
+      <small>Powered by <a href="https://www.embedgooglemap.co.uk">Embed Google Map</a></small>
+    </div>
+    </iframe>
+  </div>
+</section>
+
+<section class="bg-white" id="footer">
+  <div class="section footer">
+    <p style="font-style: italic;">Copyright &copy; 2019 Aidan Rooney</p>
+  </div>
+</section>
 
 
 </body>
