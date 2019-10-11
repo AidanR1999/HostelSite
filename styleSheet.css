@@ -52,7 +52,12 @@ html, body {
 }
 
 .nav .icon {
-	display:none;
+    display:none;
+    padding: 1% 0.5% 0 2.5%;
+    color: white;
+}
+.nav .icon:hover {
+    color: black;
 }
 
 @media screen and (max-width: 600px) {
@@ -90,22 +95,28 @@ header {
     font-family: 'Lato', sans-serif;
     font-size: 5em;
     letter-spacing: 1px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    text-align: center;
+    top: 30%;
     color: white;
     text-shadow: 4px 4px black;
 }
 
-.textbox {
-    width: 25%;
+.textbox{
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+}
+
+.txtbox-small {
+    width: 10%;
+}
+
+.txtbox-large {
+    width: 25%;
 }
 
 .btn {
@@ -124,10 +135,10 @@ header {
 }
 
 .header-btn {
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;;
+    text-align: center;
+    top: 35%;
+    left: 45%;
 }
 
 .btn-gold {

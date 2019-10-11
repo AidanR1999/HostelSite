@@ -68,10 +68,20 @@
 <div class="section bg-gold contact" id="contact">
   <h1>Contact us!</h1>
   <p> Enter your name and contact details and we'll get in touch with you as soon as possible. </p>
-  <form id="contactForm" action="data/processData.php" method="post" style="padding-bottom: 3%;">
-    <label for="first" class="label">Enter your first name:</label>
-    <input class="textbox" type="text" name="first" id="first" placeholder="First Name" required/>
-    <input type="submit" name="submit" id="submit" value="Submit" class="btn" />
+  <form id="contactForm" action="data/contact-form.php" method="post" style="padding-bottom: 3%;">
+    <label for="forename" class="label">Enter your forename:</label>
+    <input class="textbox txtbox-small" type="text" name="first" id="first" placeholder="Forename" required/>
+
+    <label for="surname" class="label">Enter your surname:</label>
+    <input class="textbox txtbox-small" type="text" name="surname" id="surname" placeholder="Surname" required/>
+    <br>
+    <label for="email" class="label">Enter your email address:</label>
+    <input class="textbox txtbox-large" type="text" name="email" id="email" placeholder="Email" required/>
+    <br>
+    <label for="message" class="label">Enter your message:</label>
+    <input class="textbox txtbox-large" type="text" name="message" id="message" placeholder="Your message" required/>
+    <br>
+    <input type="button" name="submit" id="submit" value="Submit" class="btn" />
   </form>
 </div>
 
