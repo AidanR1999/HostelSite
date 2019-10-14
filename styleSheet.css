@@ -91,13 +91,16 @@ header {
     width: 100%;
 }
 
+.header-content {
+    text-align: center;
+    padding-top: 10%;
+}
+
 .heading-text{
     font-family: 'Lato', sans-serif;
     font-size: 5em;
-    letter-spacing: 1px;
+    letter-spacing: 0.001em;
     position: relative;
-    text-align: center;
-    top: 30%;
     color: white;
     text-shadow: 4px 4px black;
 }
@@ -125,7 +128,7 @@ header {
     background-color: white;
     color: black;
     padding: 14px 28px;
-    font-size: 16px;
+    font-size: 1em;
     cursor: pointer;
 }
 
@@ -135,10 +138,10 @@ header {
 }
 
 .header-btn {
-    position: relative;;
+    position: relative;
     text-align: center;
-    top: 35%;
-    left: 45%;
+    border-spacing: 0.5em;
+    font-size: 1em;
 }
 
 .btn-gold {

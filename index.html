@@ -48,8 +48,10 @@
       </a>
     </div>
 
-    <div class="heading-text">Our Youth Hostel</div>
-    <button class="btn header-btn btn-gold" type="button" onclick="window.location = '#about';">About us</button>
+    <div class="header-content">
+        <div class="heading-text">Our Youth Hostel</div>
+        <button class="btn header-btn btn-gold" type="button" onclick="window.location = '#about';">About us</button>
+    </div>
 
   </header>
     
@@ -70,10 +72,10 @@
   <p> Enter your name and contact details and we'll get in touch with you as soon as possible. </p>
   <form id="contactForm" action="data/contact-form.php" method="post" style="padding-bottom: 3%;">
     <label for="forename" class="label">Enter your forename:</label>
-    <input class="textbox txtbox-small" type="text" name="first" id="first" placeholder="Forename" required/>
-
+    <input class="textbox txtbox-large" type="text" name="forename" id="forename" placeholder="Forename" required/>
+    <br>
     <label for="surname" class="label">Enter your surname:</label>
-    <input class="textbox txtbox-small" type="text" name="surname" id="surname" placeholder="Surname" required/>
+    <input class="textbox txtbox-large" type="text" name="surname" id="surname" placeholder="Surname" required/>
     <br>
     <label for="email" class="label">Enter your email address:</label>
     <input class="textbox txtbox-large" type="text" name="email" id="email" placeholder="Email" required/>
