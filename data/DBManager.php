@@ -1,11 +1,11 @@
 <?php
-include 'Contact.php'
+    include 'Contact.php'
 
     function connectToDb() {
         $servername = "localhost";
         $username = "root";
         $password = "";
-        $dbname = "test";
+        $dbname = "hostelSite";
         
         try {
             $conn = new PDO("mysql:host=$servername;dbname=$name", $username, $password);
@@ -22,6 +22,15 @@ include 'Contact.php'
     function addContactInfo($contact) {
         $conn = connectToDb();
 
-        $query=$conn->prepare("");
-    }
+        if($conn != null) {
+            $query=$conn->prepare("INSERT INTO Contacts VALUES(?, ?, ?, ?)");
+
+            $query->bindParam(1, $contact->forename);
+            $query->bindParam(2, $contact->surname);
+            $query->bindParam(3, $contact->email);
+            $query->bindParam(4, $contact->message);
+        }
+        else {
+            echo "Error: could not write contact info to database"
+        }
 ?>
